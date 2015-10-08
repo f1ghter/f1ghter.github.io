@@ -1,0 +1,406 @@
+body {
+    background-color: #382e36;
+    background: url(img/body-bg.jpg) center no-repeat;
+    background-size: cover;
+    font: 1em "Doppio One", Arial, sans-serif;
+    color: #000;
+}
+.clear:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.wrapper {
+    width: 980px;
+    margin: 37px auto 0;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0;
+}
+
+header ul {
+    margin: 0;
+}
+header li {
+    display: inline-block;
+    list-style: none;
+}
+    .nav-header {
+        height: 60px;
+        background: url(img/logo.png) 10px 0 no-repeat  ;
+        background-color: #202020;
+        border-radius: 3px 3px 0 0;
+    }
+    .nav-header a {
+        display: inline-block;
+        height: 27px;
+        margin: 0 6px;
+        padding: 0 14px;
+        line-height: 27px;
+        font-size: 14px;
+        font-family: "Doppio One", Arial , sans-serif;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .nav-header a:hover {
+        border-radius: 3px;
+        box-shadow: 0 0 2px #a1887f inset;
+    }
+    .nav-header .active {
+        border-radius: 3px;
+        background-color: #a1887f;
+    }
+        .menu {
+            float: right;
+            margin-top: 15px;
+            margin-right: 17px;
+        }
+
+/*begin slider*/
+.slider {
+    height: 560px;
+    background: url(img/slider-bg.jpg) -4px 0  no-repeat;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    padding-top: 164px;
+    color: #FFF;
+    font-family: "Oswald";
+    font-size: 46px;
+    line-height: 51px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.89);
+}
+h1 .big {
+    font-size: 52px;
+}
+
+.img-shadow {
+    display: inline-block;
+    margin: 99px 6px 0;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px white inset;
+    transition: box-shadow .3s;
+}
+    .slider .active {
+        box-shadow: 0 0 0 4px #a1887f inset;
+    }
+    .img-shadow:hover {
+        box-shadow: 0 0 0 4px #666 inset, 0 0 30px 4px rgba(0,0,0, .5) inset;
+    }
+
+.slide-1 {
+    height: 109px;
+    width: 153px;
+    background-image: url(img/slider-1.jpg);
+}
+.slide-2 {
+    height: 109px;
+    width: 109px;
+    background-image: url(img/slider-2.jpg);
+}
+.slide-3 {
+    height: 109px;
+    width: 184px;
+    background-image: url(img/slider-3.jpg);
+}
+/*end slider*/
+
+/*begin featured*/
+.featured {
+    height: 296px;
+    position: relative;
+}
+
+.featured-image {
+    position: relative;
+    float: left;
+    display: inline-block;
+    padding: 29px 0 0 22px;
+}
+
+.bestseller:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px; left: 0;
+    height: 124px;
+    width: 131px;
+    background: url(img/bestseller.png) 0 0 no-repeat;
+}
+
+.featured-info {
+    position: relative;
+    float: right;
+    padding-left: 34px;
+    width: 490px;
+    height: 100%;
+    z-index: 1;
+    background: #ebe4e1;
+    font-family: "Doppio One"
+}
+.featured-info:before {
+    content: "SALE";
+    position: absolute;
+    top: -59px; right: 0;
+    font-size: 180px;
+    font-family: "Oswald", arial, sans-serif;
+    color: #dfd8d6;
+    z-index: -1;
+}
+.featured-info h2 {
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-size: 19px;
+}
+.author, .price {
+    display: block;
+}
+.author {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #a9928a;
+}
+.price {
+    margin-top: 12px;
+    font-size: 72px;
+    font-family: "Oswald";
+    letter-spacing: -2px;
+}
+.add-cart, .add-cart:visited {
+    display: inline-block;
+    margin-top: -2px;
+    width: 226px;
+    height: 38px;
+    line-height: 37px;
+    font-size: 13px;
+    border: 3px solid #a9928a;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #a9928a;
+    transition: all .3s;
+    }
+
+.add-cart:hover {
+    color: #333;
+    border-color: #333;
+}
+
+.rating {
+    margin-left: 42px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.rating-stars {
+    display: inline-block;
+    margin-left: 11px;
+}
+.star {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(img/star.png) 0 0 no-repeat;
+}
+.question, .question:visited {
+    display: block;
+    margin-top: 38px;
+    width: 165px;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+}
+.question:hover {
+    text-decoration: underline;
+}
+/*end featured*/
+
+/*begin carousel*/
+.carousel {
+    margin: 22px 0 58px 0;
+}
+.item {
+    position: relative;
+    width: 252px;
+    margin: 0 20px;
+    font-family: "Doppio One", arial, sans-serif;
+    
+}
+.item-1 .carousel-item-image{
+    background: url(img/carousel-1.jpg) bottom center no-repeat;
+}
+.item-2 .carousel-item-image{
+    background: url(img/carousel-2.jpg) bottom center no-repeat;
+}
+.item-3 .carousel-item-image{
+    background: url(img/carousel-3.jpg) bottom center no-repeat;
+}
+.item-4 .carousel-item-image{
+    background: url(img/carousel-4.jpg) bottom center no-repeat;
+}
+
+.carousel-item-image {
+    height: 158px;
+}
+.item-capture {
+    margin-left: 20px;
+    margin-top: 27px;
+}
+.bike-model,
+.bike-master,
+.item a {
+    display: block;
+}
+.bike-model {
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.bike-master {
+    font-size: 11px;
+    font-style: italic;
+}
+.bike-price {
+    position: absolute;
+    top: 186px; right: 20px;
+    font-family: "Oswald", arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.item a {
+    display: block;
+    width: 163px;
+    height: 31px;
+    margin-top: 12px;
+    line-height: 31px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #a9928a;
+    text-align: center;
+    border: 2px solid #a9928a;
+    transition: all .3s;
+}
+.item a:hover {
+    color: #333;
+    border: 2px solid #333;
+}
+.slick-prev { left: 0;}
+.slick-next { right: 0;}
+.slick-prev:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    margin-top: -60px;
+    left: 25px;
+    width: 47px;
+    height: 75px;
+    background: url(img/carousel-arrows.png);
+}
+.slick-next:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    margin-top: -60px;
+    right: 25px;
+    width: 47px;
+    height: 75px;
+    background: url(img/carousel-arrows.png) -49px 0 no-repeat;
+}
+/*end carousel*/
+
+/*begin teaser*/
+.teaser {
+    position: relative;
+    height: 363px;
+    background: url(img/teaser-bg.jpg) 0 0 no-repeat;
+    overflow: hidden;
+}
+.teaser a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -18px 0 0 -112px;
+    display: block;
+    width: 237px;
+    height: 48px;
+    line-height: 48px;
+    border: 3px solid #FFF;
+    font-family: "Doppio One";
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: all .3s;
+}
+.teaser a:hover {
+    color: #333;
+    border-color: #333;
+}
+/*end teaser*/
+
+/*begin nav-footer*/
+.nav-footer {
+    margin-top: 25px;
+    padding-bottom: 26px;
+    text-align: center;
+}
+.nav-footer ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+.nav-footer a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 15px; 
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.nav-footer li {
+    list-style: none;
+    display: inline-block;
+}
+/*end nav-footer*/
+
+
+.payment-methods {
+    background: transparent;
+    background-color: transparent;
+    text-align: center;
+}
+.payment-methods ul {
+    margin-top: 19px;
+}
+    .payment-methods li {
+        display: inline-block;
+    }
+    .payment-methods a {
+        width: 43px; height: 29px;
+        margin: 0 1px;
+        display: inline-block;
+        text-decoration: none;
+    }
+        .pm-paypal {
+            background: url(img/payment-methods.png) 0 0 no-repeat;
+        }
+        .pm-upay {
+            background: url(img/payment-methods.png) -47px 0 no-repeat;
+        }
+        .pm-visa {
+            background: url(img/payment-methods.png) -94px 0 no-repeat;
+        }
+        .pm-ax {
+            background: url(img/payment-methods.png) -140px 0 no-repeat;
+        }
+        .pm-ya {
+            background: url(img/payment-methods.png) -186px 0 no-repeat;
+        }

@@ -1,0 +1,461 @@
+/*used external fonts:
+open sans: 300i,700,900;
+lato: 300,700;
+*/
+/*PSD from cssauthor.com, markup by Aleksandr Volodko*/
+body {
+    background: #eee;
+    font: normal 1em "Open sans", "PT Sans", sans-serif;
+}
+.left {float: left;} .right {float: right;}
+.clear:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.center-wrapper {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.greeting {
+    position: relative;
+    height: 880px;
+    background: url(images/bg.jpg) center no-repeat;
+}
+    .logo {
+        position: absolute;
+        top: 18px; left: 215px;
+        width: 178px;
+        height: 134px;
+        background: url(images/logo.png) center no-repeat;
+        cursor: pointer;
+    }
+
+    nav {
+        margin-right: 209px;
+        padding-top: 46px;
+        font: 14px bold "Lato", sans-serif;
+        color: #fff;
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        display: inline-block;
+    }
+    nav a {
+        padding: 15px;
+        text-decoration: none; 
+        font: bold 14px "Lato", sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        transition: background .6s;
+    }
+    nav a:hover {
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,.3);
+        box-shadow: inset 0px 0px 0px 2px #000;
+
+    }
+    nav li:nth-child(3) a {
+        color: red;
+        background: url(images/menu-icon.png) center no-repeat;
+        width: 10px;
+        height: 14px;
+    }
+        nav li:nth-child(3) a:hover {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+    .heading {
+        clear: both;
+        position: absolute;
+        top: 346px; left: 632px;
+        text-align: center;
+    }
+
+    .heading h1 {
+        margin: 0px;
+        color: #fff;
+        font-family: "Times New Roman";
+        font-weight: bold;
+        font-style: italic;
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+        .heading h1 span {
+            position: relative;
+            top: -17px; left: -5px;
+            font-family: "Open sans";
+            text-transform: capitalize;
+            font-size: 100px;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+    .heading-button {
+        display: inline-block;
+        width: 280px;
+        height: 68px;
+        margin-top: -5px;
+        border-radius: 3px;
+        text-decoration: none;
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 68px;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #30788B;
+    }
+/*-- greeting end --*/
+
+/*-- begin slogan--*/
+.slogan {
+    padding-bottom: 80px;
+    text-align: center;
+    background: #fff;
+}
+.slogan-item {
+    display: inline-block;
+    width: 406px;
+    padding-top: 101px;
+}
+.slogan-item h3 {
+    position: relative;
+    margin-top: 9px;
+}
+    .slogan-item h3:after {
+        content: "";
+        width: 90px;
+        margin-left: -45px;
+        border-top: 1px solid #f57365;
+        position: absolute;
+        top: 30px; left: 50%;
+    }
+    
+    .item-icon-wrapper {
+        position: relative;
+        display: inline-block;
+        width: 103px;
+        height: 103px;
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+        .item-icon {
+            position: absolute;
+            top: 26px; left: 31px;
+            width: 48px;
+            height: 49px;
+            background: url(images/icons.png)  no-repeat;
+        }
+        .slogan-item:nth-child(2) .item-icon{
+            width: 36px;
+            background-position: -47px 0px;
+        }
+        .slogan-item:nth-child(3) .item-icon{
+            top: 23px;
+            width: 36px;
+            background-position: -81px 0px;
+        }
+    .slogan-item p {
+        margin-top: 18px;
+        padding: 0 30px;
+        font-family: "Lato", sans-serif;
+        font-weight: 300;
+        line-height: 25px;
+    }
+/*-- end slogan --*/
+
+/*-- begin app-demo --*/
+.app-demo {
+    height: 881px;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+.app-demo-text {
+    width: 625px;
+    margin-left: 221px;
+    margin-top: 160px;
+}
+     h3 {
+        position: relative;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .app-demo-text h3:after {
+        content: "";
+        width: 88px;
+        border-top: 1px solid #f57365;
+        position: absolute;
+        top: 29px; left: 0%;
+    }
+    .app-demo-text p {
+        margin-top: 22px;
+        line-height: 26px;
+        letter-spacing: 1px;
+    }
+    .app-demo a {
+        width: 112px;
+        height: 39px;
+        margin: 12px 6px 0 0;
+        display: inline-block;
+        background: url(images/appstore.png) no-repeat;
+    }
+    .app-demo a:last-child {
+        width: 120px;
+        background-position: -114px;
+    }
+
+    .app-demo img {
+        padding: 159px 48px 0 43px;
+        display: inline-block;
+        margin-top: 111px;
+        margin-left: 20px;
+        background: url(images/iphone-border.png) 0 0 no-repeat;
+    }
+/*-- end app-demo --*/
+.testimonials {
+    position: relative;
+    height: 462px;
+    overflow: hidden;
+    text-align: center;
+    background: url(images/bg-testimonials.jpg) 0 1px no-repeat #163035;
+}
+.testimonial-item {
+    position: absolute;
+    top: 0; left: 0;
+    width: 1600px;
+    height: 462px;
+}
+    .testimonial-item:first-child {
+         -webkit-animation: slide1 12s infinite;
+            -moz-animation: slide1 12s infinite;
+              -o-animation: slide1 12s infinite;
+                 animation: slide1 12s infinite;
+    }
+    .testimonial-item:nth-child(2) {
+         -webkit-animation: slide2 12s infinite;
+            -moz-animation: slide2 12s infinite;
+              -o-animation: slide2 12s infinite;
+                 animation: slide2 12s infinite;
+    }
+    .testimonial-item:last-child {
+        -webkit-animation: slide3 12s infinite;
+            -moz-animation: slide3 12s infinite;
+              -o-animation: slide3 12s infinite;
+                 animation: slide3 12s infinite;
+    }
+
+.testimonial-item img {
+    display: inline-block;
+    width: 101px; height: 101px;
+    margin-top: 80px;
+    border: 5px solid #748386;
+    border-radius: 50%;
+}
+.testimonial-item p {
+    color: #fff;
+    opacity: .36;
+}
+    p.quote {
+        width: 1080px;
+        margin: 17px auto 0;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 300;
+        font-style: italic;
+    }
+    p.author {
+        font-size: 18px;
+    }
+
+.switcher {
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+    .switcher-item {
+        display: inline-block;
+        width: 10px; height: 10px;
+        border-radius: 50%;
+        margin: 3px;
+        background-color: #fff;
+        opacity: .2;
+    }
+        .switcher .active {
+            opacity: 1;
+        }
+
+/*-- begin adress --*/
+.adress {
+    background: #fff;
+    padding-top: 1px;
+    clear: both;
+    padding-bottom: 222px;
+}
+.adress h2 {
+    margin-top: 63px;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+}
+.map-wrapper{
+    width: 1180px;
+    margin: 87px auto 0;
+    padding-bottom: 31px;
+    background-color: #f7f7f7;
+    border-bottom: 4px solid #e2e2e2;
+}
+#map-canvas {
+    width: 456px;
+    height: 307px;
+    margin: 26px 21px;
+}
+
+.cafe-list {
+    width: 557px;
+    margin-left: 19px;
+}
+
+.cafe-list-item{
+    position: relative;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e3e4e8;
+}
+.distance {
+    position: absolute;
+    top: 23px; right: -26px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2497b6;
+    text-transform: uppercase;
+}
+.cafe-list-item span:first-child {
+    display: inline-block;
+    width: 35px;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    font-weight: 900;
+    text-align: center;
+    background-color: #2497B6;
+    border-radius: 7px;
+}
+.cafe-header {
+    margin: 24px 0 0 10px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2497b6;
+}
+.cafe-adress {
+    margin-left: 45px;
+    margin-top: 3px;
+    padding-left: 25px;
+    padding: 5px 0 5px 25px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    color: #99a3b1;
+    background: url(images/map-pin.png) 3px center no-repeat;
+}
+/*-- end adress --*/
+
+footer {
+    height: 91px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e2e2e2;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+    footer span {
+        line-height: 91px;
+    }
+
+/*-- Animations for testimonials slider --*/
+@-webkit-keyframes slide1 {
+    0% {opacity: 1;}
+    33% {opacity: 0;}
+    66% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-moz-keyframes slide1 {
+    0% {opacity: 1;}
+    33% {opacity: 0;}
+    66% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@-o-keyframes slide1 {
+    0% {opacity: 1;}
+    33% {opacity: 0;}
+    66% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes slide1 {
+    0% {opacity: 1;}
+    33% {opacity: 0;}
+    66% {opacity: 0;}
+    100% {opacity: 1;}
+}
+/*************************/
+
+@-webkit-keyframes slide2 {
+    0% {opacity: 0;}
+    33% {opacity: 1;}
+    66% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@-moz-keyframes slide2 {
+    0% {opacity: 0;}
+    33% {opacity: 1;}
+    66% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@-o-keyframes slide2 {
+      0% {opacity: 0;}
+     33% {opacity: 1;}
+     66% {opacity: 0;}
+    100% {opacity: 0;}
+}
+@keyframes slide2 {
+    0% {opacity: 0;}
+    33% {opacity: 1;}
+    66% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+/*************************/
+@-webkit-keyframes slide3 {
+    0% {opacity: 0;}
+    33% {opacity: 0;}
+    66% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-moz-keyframes slide3 {
+    0% {opacity: 0;}
+    33% {opacity: 0;}
+    66% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-o-keyframes slide3 {
+    0% {opacity: 0;}
+    33% {opacity: 0;}
+    66% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@keyframes slide3 {
+    0% {opacity: 0;}
+    33% {opacity: 0;}
+    66% {opacity: 1;}
+    100% {opacity: 0;}
+}

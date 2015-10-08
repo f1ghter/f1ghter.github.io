@@ -1,0 +1,331 @@
+/*PDF from cssauthor.com markup by Volodko*/
+body {
+    margin: 0;
+    font: 1em "open sans", "PT Sans", sans-serif;
+    background-color: #eee;
+}
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.left {float: left;}
+.right {float: right;}
+
+.center-wrapper {
+    width: 1280px;
+    margin: 0 auto;
+    background: #eee;
+}
+header {
+    height: 77px;
+    padding-top: 22px;
+    background: #fff;
+}
+    .logo {
+        float: left;
+        width: 178px;
+        height: 61px;
+        margin-left: 164px;
+        background: url(logo-178-61.png) no-repeat;
+    }
+    nav {
+        float: right;
+        margin: 3px 142px 0 0;
+    }
+    .menu-item {
+        margin-right: 13px;
+        padding-right: 16px;
+        list-style: none;
+        font-size: 19px;
+        line-height: 19px;
+        font-family: "PT Sans";
+        font-weight: 300;
+        display: inline-block;
+        border-right: 1px solid #565656;
+    }
+    
+        .menu-item:nth-child(3) {
+            border: none;
+            padding-right: 0;
+            margin-right: 0;
+        }
+        .menu-item a {
+            text-decoration: none;
+            color: #565656;
+        }
+        .menu-item a:hover{
+        padding: 5px 0 5px 0;
+        background-color: #16deca;
+        transition: background-color 0.4s, padding .4s;
+    }
+
+.app {
+    position: relative;
+    height: 539px;
+    background: #00747e;
+    background: -moz-linear-gradient(left, #00747e 0%, #0fc2ae 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#00747e), color-stop(100%,#0fc2ae));
+    background: -webkit-linear-gradient(left, #00747e 0%,#0fc2ae 100%);
+    background: -o-linear-gradient(left, #00747e 0%,#0fc2ae 100%);
+    background: -ms-linear-gradient(left, #00747e 0%,#0fc2ae 100%);
+    background: linear-gradient(to right, #00747e 0%,#0fc2ae 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00747e', endColorstr='#0fc2ae',GradientType=1 );
+}
+    .app .iphone {
+        position: absolute;
+        top: 48px; left: 196px;
+        width: 452px;
+        height: 457px;
+        background: url(images/iphone-452-457.png) no-repeat;
+    }
+    .app .tabs {
+        float: right;
+    }
+    .app .tab {
+        display: inline-block;
+        width: 119px;
+        height: 123px;
+        position: relative;
+
+
+    }
+    .tab-1 {
+        background-color: #079C96;
+        background-color: rgba(1,125,130, .4);
+        background-image: url(images/tab-icon-1.png);
+        background-repeat: no-repeat;
+        background-position: 26px 29px;
+        }
+        .tab-2 {
+        background-color: #048E8C;
+        background-color: rgba(1,125,130, .68);
+        background-image: url(images/tab-icon-2.png);
+        background-repeat: no-repeat;
+        background-position: 37px 28px;
+        }
+        .tab-3 {
+        background-color: #007D81;
+        background-image: url(images/tab-icon-3.png);
+        background-repeat: no-repeat;
+        background-position: 45px 39px;
+        position: relative;
+        }
+        .tab-3:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -8px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 12px 8px 0 8px;
+            border-color: #017d82 transparent transparent transparent;
+        }
+    .globe {
+        position: absolute;
+        top: 182px; left: 641px;
+        width: 360px;
+        height: 70px;
+        padding-left: 65px;
+        color: #fff;
+        background: url(images/globe-55-55.png) no-repeat 1px 0px;
+    }
+        .globe span {
+            color: #fff;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 21px;
+            line-height: 25px;
+        }
+    .showcase {
+        color: #fff;
+    }
+    .showcase h2 {
+        margin: 50px 0 0 -68px;
+        letter-spacing: -1px;
+        font-size: 39px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .showcase p {
+        margin: 0 0 0 -62px;
+        font-weight: 300;
+    }
+    .btn-cart {
+        display: block;
+        width: 116px;
+        height: 45px;
+        margin-left: 55px;
+        line-height: 45px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: "Open sans";
+        color: #fff;
+        background-color: #54D3C3;
+    }
+
+        .btn-cart:after {
+            content: "";
+            position: relative;
+            top: -100%; left: -85px;
+            display: inline-block;
+            width: 55px;
+            height: 45px;
+            background: url(images/cart.png) center no-repeat #259D8E;
+        }
+    .app .btn-cart {
+        margin: 30px 0 0 -8px;
+    }
+
+.about {
+    position: relative;
+    height: 753px;
+    background: #fff;
+    text-align: center;
+}
+    .about h1 {
+        margin: 0;
+        padding-top: 34px;
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 41px;
+        color: #636363;
+    }
+    .about p {
+        width: 920px;
+        margin: 15px auto 0;
+        font-size: 15px;
+        line-height: 22px;
+        font-family: "Open Sans";
+        color: #9f9f9f;
+    }
+    .about .app-logo {
+        width: 481px;
+        height: 421px;
+        position: absolute;
+        background: url(images/about-app-logo-481-421.png);
+        top: 208px;
+        left: 431px;
+    }
+
+/*-- begin case --*/
+    .casetab {
+        display: inline-block;
+        width: 213px;
+        height: 170px;
+        background-repeat: no-repeat;
+    }
+    .case-tabs .casetab-1 {
+        
+        background-color: #01646c;
+        background-image: url(images/casetab-icon-1-81-81.png);
+        background-position: 68px 54px;
+
+    }
+    .case-tabs .casetab-2 {
+        background-color: #097b84;
+        background-image: url(images/casetab-icon-2-71-82.png);
+        background-position: 69px 50px;
+    }
+    .case-tabs .casetab-3 {
+
+        background-color: #118f99;
+        background-image: url(images/casetab-icon-3-66-79.png);
+        background-position: 77px 44px;
+    }
+    .case-tabs .casetab-4 {
+        background-color: #1da0aa;
+        background-image: url(images/casetab-icon-4-77-71.png);
+        background-position: 71px 48px;
+    }
+    .case-tabs .casetab-5 {
+        background-color: #29b7c2;
+        background-image: url(images/casetab-icon-5-56-74.png);
+        background-position: 84px 43px;
+    }
+    .case-tabs .casetab-6 {
+        background-color: #3ccad5;
+        background-image: url(images/casetab-icon-6-72-68.png);
+        background-position: 73px 50px;
+    }
+
+    .case-slogan {
+        position: relative;
+        height: 528px;
+        background: #01646c;
+        background: -moz-linear-gradient(left, #01646c 0%, #099e96 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#01646c), color-stop(100%,#099e96));
+        background: -webkit-linear-gradient(left, #01646c 0%,#099e96 100%);
+        background: -o-linear-gradient(left, #01646c 0%,#099e96 100%);
+        background: -ms-linear-gradient(left, #01646c 0%,#099e96 100%);
+        background: linear-gradient(to right, #01646c 0%,#099e96 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01646c', endColorstr='#099e96',GradientType=1 );
+    }
+    
+    .laptop {
+        position: absolute;
+        top: 121px; left: 171px;
+        width: 559px;
+        height: 330px;
+        background: url(images/laptop.png) 0 0 no-repeat;
+    }
+    .case-slogan .showcase {
+        position: absolute;
+        top: 115px; left: 793px;
+    }
+        .case-slogan .btn-cart {
+            margin: 31px 0 0 -9px;
+            background-color: #06ccb3;
+        }
+        .case-slogan .btn-cart:after {
+            background-color: #3edac6;
+        }
+/*-- end case --*/
+
+/*-- begin percent --*/
+.percent {
+    height: 512px;
+    font-weight: 300;
+    background-color: #fff;
+    color: #49d7b0;
+    font-size: 74px;
+}
+    .percent p {
+        float: left;
+        width: 420px;
+        margin-top: 105px;
+        margin-left: 188px;
+        margin-right: 0;
+        line-height: 90px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .percent-value {
+        font-size: 200px;
+        font-family: "PT Sans";
+        font-weight: bold;
+    }
+
+    .arrows {
+        width: 495px;
+        height: 100%;
+        background: url(images/arrows.png) center no-repeat #49D7B0;
+    }
+/*-- end percent --*/
+
+footer {
+    height: 100px;
+    border-top: 1px solid #dedede;
+    color: #989898;
+    background: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 100px;
+    color: #989898;
+}

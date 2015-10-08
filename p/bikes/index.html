@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bikeshop</title>
+    <link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+    <!-- used in header -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <!-- used in slider -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo"></div>
+            <nav class="nav-header">
+                <ul class="menu">
+                    <li><a href="#" class="active">bikes</a></li>
+                    <li><a href="#">best buy</a></li>
+                    <li><a href="#">offers</a></li>
+                    <li><a href="#">accessories</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">about us</a></li>
+                </ul>
+            </nav>
+            <div class="slider">
+                 <h1>
+                    What a beautiful bike <br>
+                    timeless, atmospheric <br>
+                    <span class="big">& uncredible bikes!</span>
+                </h1>
+                <div class="slide-1 img-shadow active"></div>
+                <div class="slide-2 img-shadow"></div>
+                <div class="slide-3 img-shadow"></div>
+            </div>
+            <!-- end slider -->
+        </header>
+        <section>
+            <div class="featured clear">
+                <div class="featured-image bestseller">
+                    <img src="img/featured-bike.jpg" height="236" width="387" alt="cool bicycle">
+                </div>
+                <div class="featured-info">  <!-- float? -->
+                    <h2>Bicycle RetroSyperb Vii #1</h2>
+                    <span class="author">by Rodriguez Else</span>
+                    <span class="price">299.99$</span>
+                    <a class="add-cart" href="#">add to shopping bag</a>
+                    <span class="rating">rating: 5.0</span>
+                    <span class="rating-stars">
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </span>
+                    <a class="question" href="#">Ask the Customer a Question</a>
+                </div>
+                <!-- end featured-info -->
+            </div>
+            <!-- end featured -->
+        </section>
+        <div class="carousel">
+            <div class="item item-1">
+                <div class="carousel-item-image"></div>
+                <div class="item-capture">
+                    <span class="bike-model">sport bicycle 988</span>
+                    <span class="bike-master">by Enrique Salmo</span>
+                    <span class="bike-price">139.99$</span>
+                    <a href="">add to shopping cart</a>
+                </div>
+                
+            </div>
+            <div class="item item-2">
+                <div class="carousel-item-image"></div>
+                <div class="item-capture">
+                    <span class="bike-model">classic bicycle</span>
+                    <span class="bike-master">by Ankino Frique</span>
+                    <span class="bike-price">1 219.99$</span>
+                    <a href="">add to shopping cart</a>
+                </div>
+                
+            </div>
+            <div class="item item-3">
+                <div class="carousel-item-image"></div>
+                <div class="item-capture">
+                    <span class="bike-model">retro bicycle #2</span>
+                    <span class="bike-master">by Enrique Salmo</span>
+                    <span class="bike-price">899.99$</span>
+                    <a href="">add to shopping cart</a>
+                </div>
+                
+            </div>
+            <div class="item item-4">
+                <div class="carousel-item-image"></div>
+                <div class="item-capture">
+                    <span class="bike-model">classic bicycle</span>
+                    <span class="bike-master">by Marco Spielmann</span>
+                    <span class="bike-price">1 219.99$</span>
+                    <a href="">add to shopping cart</a>
+                </div>
+            </div>
+        </div>
+        <!-- end carousel -->
+        <div class="teaser">
+            <a href="#">browse shop</a>
+        </div>
+
+        <footer>
+        <nav class="nav-footer">
+            <ul>
+                <li><a href="#">terms & conditions</a></li>
+                <li><a href="#">return policy</a></li>
+                <li><a href="#">reviews</a></li>
+                <li><a href="#">about shop</a></li>
+                <li><a href="#">secure payment</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+    </div>
+    <!-- end wrapper  -->
+    <div class="payment-methods">
+            <ul>
+                <li><a href="#" class="pm-paypal"></a></li>
+                <li><a href="#" class="pm-upay"></a></li>
+                <li><a href="#" class="pm-visa"></a></li>
+                <li><a href="#" class="pm-ax"></a></li>
+                <li><a href="#" class="pm-ya"></a></li>
+            </ul>
+        </div>
+    
+    <!-- begin scripts  -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.carousel').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            centerMode: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            // variableWidth: true
+          });
+        });
+    </script>
+    <!-- end scripts  -->
+
+</body>
+</html>
